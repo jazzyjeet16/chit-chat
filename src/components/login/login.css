@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: rgba(17, 25, 40, 0.45); /* Change to match your app's background */
+    color: #ffffff; /* Default text color */
+}
+
+/* Login Container */
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+}
+
+/* Item Style */
+.item {
+    width: 100%;
+    max-width: 400px; /* Limit the maximum width for responsiveness */
+    padding: 20px;
+    background-color: rgba(17, 25, 40, 0.45); /* Dark background for the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Consistent shadow */
+}
+
+/* Header */
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff; /* White text for visibility */
+}
+
+/* Input Fields */
+input {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside the input */
+    margin: 10px 0; /* Vertical spacing */
+    border: 1px solid #444; /* Darker border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for inputs */
+    outline: none; /* Remove default outline on focus */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+    background-color: rgba(17, 25, 40, 0.45); /* Dark background for inputs */
+    color: #ffffff; /* White text in inputs */
+}
+
+/* Input Focus */
+input:focus {
+    border-color: #007bff; /* Change border color on focus */
+}
+
+/* Button Styles */
+button {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #007bff; /* Primary color */
+    color: #ffffff; /* Text color */
+    font-size: 16px; /* Font size for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 10px; /* Vertical spacing */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    &:disabled{
+        cursor:not-allowed;
+        background-color: deepblue;
+
+    }
+}
+
+/* Button Hover */
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Toggle Button */
+.toggle {
+    background-color: transparent; /* Transparent background */
+    color: #007bff; /* Link color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 10px; /* Vertical spacing */
+    text-align: center; /* Center text */
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+/* Toggle Button Hover */
+.toggle:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Avatar Label */
+.avatar-label {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center items vertically */
+    cursor: pointer; /* Change cursor to pointer */
+    margin: 10px 0; /* Vertical spacing */
+}
+
+/* Avatar Image */
+.avatar-img {
+    width: 50px; /* Fixed width */
+    height: 50px; /* Fixed height */
+    border-radius: 50%; /* Circular shape */
+    margin-right: 10px; /* Space between image and text */
+}
+
+/* Separator Style */
+.separator {
+    margin: 20px 0; /* Vertical spacing */
+    border-top: 1px solid #444; /* Dark border for separation */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .item {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    input,
+    button {
+        font-size: 14px; /* Smaller font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .item {
+        padding: 10px; /* Further reduce padding for very small screens */
+    }
+
+    input,
+    button {
+        font-size: 12px; /* Even smaller font size for very small screens */
+    }
+}
